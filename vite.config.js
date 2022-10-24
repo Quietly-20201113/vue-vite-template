@@ -22,7 +22,7 @@ export default ({ mode }) => {
     server: {
       // proxy: {
       //   '/api': {
-      //     target: 'http://39.106.168.143:8001',
+      //     target: 'xxx',
       //     changeOrigin: true,
       //     rewrite: (path) => path.replace(/^\/api/, '/api'),
       //   },
