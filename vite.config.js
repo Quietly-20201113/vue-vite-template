@@ -50,11 +50,11 @@ export default ({ mode }) => {
       }),
       vue(),
       AutoImport({
-        resolvers: [ElementPlusResolver()],
+        resolvers: [ElementPlusResolver({ importStyle: 'sass' })],
       }),
       Components({
         resolvers: [
-          ElementPlusResolver(),
+          ElementPlusResolver({ importStyle: 'sass' }),
           // Icon自动引入解析器
           IconsResolver({
             // 自动引入的Icon组件统一前缀，默认为 i，设置false为不需要前缀
@@ -68,6 +68,13 @@ export default ({ mode }) => {
       }),
       VueSetupExtend(),
     ],
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "src/assets/styles/element/index.scss" as *;',
+        },
+      },
+    },
     resolve: {
       alias: {
         '@': resolve(__dirname, 'src'),
