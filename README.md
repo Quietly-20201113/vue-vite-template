@@ -6,7 +6,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 - [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
 
-### 使用vue3.0+vite+js+tailwind 搭建配置的一个空项目模板,仅供自己学习使用
+### 使用vue3.0+vite+js+tailwind 搭建配置的一个空项目模板,欢迎使用
 
 ### 集成
 > stylelint
