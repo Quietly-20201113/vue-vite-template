@@ -1,10 +1,8 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue';
-
 </script>
-
 <template>
-  <div class="flex flex-nowrap">
+  <div class="flex items-center justify-center">
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
@@ -15,19 +13,19 @@ import HelloWorld from './components/HelloWorld.vue';
   <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped lang="scss">
+<style scoped>
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
+  transition: filter 300ms;
+}
 
-  :hover {
+.logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 
-.vue:hover {
+.logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }
-}
-
 </style>

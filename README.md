@@ -1,5 +1,10 @@
 # Vue 3 + Vite
 
+# 使用方式
+>  `npx vue-vite-template vue-vite-app --ignore-existing`其中 `vue-vite-app`是你项目本身名字
+> 
+
+
 This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
 ## Recommended IDE Setup
@@ -16,4 +21,6 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 > 处理了icons使用问题
 > 处理element-plus使用消息提示时不用引入,在eslintrc中已做配置,后续使用只需要直接使用即可;
 > 样式缺失自行引入`import 'element-plus/es/components/notification/style/css';`
+> 添加了element 主题更
+
 

@@ -2,7 +2,7 @@
   "name": "vue-vite-template",
   "description": "使用vue3.0+vite+js+tailwind 搭建配置的一个空项目模板,欢迎使用",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.3.0",
   "type": "module",
   "repository": {
     "type": "git",
@@ -42,7 +42,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "stylelint --fix \"**/*.{vue,html,sass,less,scss}\""
   },
   "dependencies": {
     "element-plus": "^2.2.17",
