@@ -2,6 +2,7 @@ import { defineConfig, loadEnv } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import eslint from 'vite-plugin-eslint';
 import stylelint from 'vite-plugin-stylelint';
+import viteSentry from 'vite-plugin-sentry';
 import AutoImport from 'unplugin-auto-import/vite';
 import { viteCommonjs } from '@originjs/vite-plugin-commonjs';
 // import svgLoader from 'vite-svg-loader';
@@ -14,6 +15,21 @@ import { FileSystemIconLoader } from 'unplugin-icons/loaders';
 import IconsResolver from 'unplugin-icons/resolver';
 import { resolve } from 'path';
 
+const packageJson = require('./package.json');
+
+const sentryConfig = {
+  configFile: './.sentryclirc',
+  release: packageJson.version, // package.json version 保持同步
+  deploy: {
+    env: 'production',
+  },
+  skipEnvironmentCheck: true, // 可以跳过环境检查
+  sourceMaps: {
+    include: ['./dist/assets'],
+    ignore: ['node_modules'],
+    urlPrefix: '~/assets',
+  },
+};
 export default ({ mode }) => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
 
@@ -34,6 +50,7 @@ export default ({ mode }) => {
       //   symbolId: 'icon-[name]',
       //   customDomId: '__svg__icons__dom__',
       // }),
+      process.env.NODE_ENV === 'production' ? viteSentry(sentryConfig) : null,
       eslint({ cache: false }),
       stylelint(),
       viteCommonjs(),
@@ -79,6 +96,9 @@ export default ({ mode }) => {
       alias: {
         '@': resolve(__dirname, 'src'),
       },
+    },
+    build: {
+      sourcemap: process.env.NODE_ENV === 'production',
     },
   });
 };

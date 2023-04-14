@@ -1,0 +1,6 @@
+[auth]
+token=user_token
+[defaults]
+url=user_url
+org=user_org|sentry
+project=user_project

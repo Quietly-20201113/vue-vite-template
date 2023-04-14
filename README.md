@@ -14,13 +14,17 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 ### 使用vue3.0+vite+js+tailwind 搭建配置的一个空项目模板,欢迎使用
 
 ### 集成
-> stylelint
-> tailwind
-> .eslintrc配置
-> element-plus
-> 处理了icons使用问题
-> 处理element-plus使用消息提示时不用引入,在eslintrc中已做配置,后续使用只需要直接使用即可;
-> 样式缺失自行引入`import 'element-plus/es/components/notification/style/css';`
-> 添加了element 主题更
+> stylelint  
+> tailwind  
+> .eslintrc配置  
+> element-plus  
+> 处理了icons使用问题  
+> 处理element-plus使用消息提示时不用引入,在eslintrc中已做配置,后续使用只需要直接使用即可;  
+> 样式缺失自行引入`import 'element-plus/es/components/notification/style/css';`  
+> 添加了element 主题更新  
+> 添加`nprogress`实现路由进度条  
+> 添加`sentry`前端错误监听模块  
+> 添加`axios`简易集成  
+
 
 

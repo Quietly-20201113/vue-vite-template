@@ -2,7 +2,7 @@
   "name": "vue-vite-template",
   "description": "使用vue3.0+vite+js+tailwind 搭建配置的一个空项目模板,欢迎使用",
   "private": false,
-  "version": "0.3.0",
+  "version": "0.4.0",
   "type": "module",
   "repository": {
     "type": "git",
@@ -47,7 +47,10 @@
   },
   "dependencies": {
     "element-plus": "^2.2.17",
-    "vue": "^3.2.37"
+    "vue": "^3.2.37",
+    "vue-router": "^4.1.6",
+    "axios": "^1.3.5",
+    "nprogress": "^0.2.0"
   },
   "devDependencies": {
     "@originjs/vite-plugin-commonjs": "^1.0.3",
@@ -86,6 +89,8 @@
     "vite-plugin-svg-icons": "^2.0.1",
     "vite-plugin-vue-setup-extend": "^0.4.0",
     "vite-plugin-vue-svg-icons": "^3.0.21",
-    "vite-svg-loader": "^3.4.0"
+    "vite-svg-loader": "^3.4.0",
+    "@sentry/vue": "^7.47.0",
+    "vite-plugin-sentry": "^1.2.0"
   }
 }
