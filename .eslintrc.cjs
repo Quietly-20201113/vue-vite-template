@@ -22,6 +22,7 @@ module.exports = {
       ignorePattern: 'class="([\\s\\S]*?)"|d="([\\s\\S]*?)"', // ignore classes or svg draw attributes
       ignoreUrls: true,
     }],
+    'vue/valid-attribute-name': 'off',
     'vue/multi-word-component-names': 'off',
     'import/no-unresolved': 'off',
     'vue/html-indent': 'off',
@@ -42,15 +43,20 @@ module.exports = {
     // '@typescript-eslint/ban-types': 'off',
     // '@typescript-eslint/no-non-null-assertion': 'off',
     // '@typescript-eslint/explicit-module-boundary-types': 'off',
-    // 'no-unused-vars': [
-    //   'error',
-    //   {
-    //     argsIgnorePattern: '^_',
-    //     varsIgnorePattern: '^_',
-    //   },
-    // ],
+    'no-unused-vars': [
+      'error',
+      { varsIgnorePattern: '.*', args: 'none' },
+    ],
+    'vue/component-definition-name-casing': ['error', 'PascalCase'],
+    'no-undefined': 'off',
+    'no-undef': 'error',
+    'no-shadow': 'error',
+    'no-delete-var': 'error',
+    'no-label-var': 'error',
+    'no-undef-init': 'error',
+    'no-use-before-define': ['error', { functions: true, classes: true, variables: true }],
     // 'space-before-function-paren': 'off',
-    'vue/name-property-casing': ['error', 'PascalCase'], // vue/component-definition-name-casing 对组件定义名称强制使用特定的大小
+    // 'vue/name-property-casing': ['error', 'PascalCase'], // vue/component-definition-name-casing 对组件定义名称强制使用特定的大小
     // 'vue/attributes-order': 'off',
     // 'vue/one-component-per-file': 'off',
     // 'vue/html-closing-bracket-newline': 'off',

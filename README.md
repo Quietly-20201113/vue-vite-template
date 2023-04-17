@@ -25,6 +25,16 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 > 添加`nprogress`实现路由进度条  
 > 添加`sentry`前端错误监听模块  
 > 添加`axios`简易集成  
+> 
+
+### 扩展
+> `@vitejs/plugin-legacy`: 作用是为打包后的文件提供传统浏览器兼容性支持  
+> 请在本地安装全局 `terser`  
+> `vite-plugin-compression`: gzip 压缩  
+
+### 注意
+> 如果不适用sentry,请将sentry相关移除在进行打包,否则会导致找不到`sourcemaps`,注意`.sentryclirc`文件处理
+
 
 
 

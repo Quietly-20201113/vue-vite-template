@@ -1,4 +1,5 @@
 <script setup>
+// eslint-disable-next-line no-unused-vars
 import HelloWorld from './components/HelloWorld.vue';
 </script>
 <template>
