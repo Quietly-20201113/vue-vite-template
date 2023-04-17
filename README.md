@@ -4,6 +4,7 @@
 >  `npx vue-vite-template vue-vite-app --ignore-existing`其中 `vue-vite-app`是你项目本身名字
 > 
 
+![性能](https://blog.ynsites.com/static/img/7b27625dd14cb0a542be9e8808f88022.sp230417_112540.png)
 
 This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
@@ -33,7 +34,9 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 > `vite-plugin-compression`: gzip 压缩  
 
 ### 注意
-> 如果不适用sentry,请将sentry相关移除在进行打包,否则会导致找不到`sourcemaps`,注意`.sentryclirc`文件处理
+> 如果不适用sentry,请将sentry相关移除在进行打包,否则会导致找不到`sourcemaps`,注意`.sentryclirc`文件处理  
+
+
 
 
 
