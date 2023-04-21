@@ -1,8 +1,8 @@
 /* eslint-disable no-plusplus */
 import axios from 'axios';
 import adapter from 'axios/lib/adapters/xhr';
-import 'element-plus/es/components/notification/style/css';
-import 'element-plus/es/components/loading/style/css';
+// import 'element-plus/es/components/notification/style/css';
+// import 'element-plus/es/components/loading/style/css';
 
 // 基础地址
 // const baseURL = window.rootData.ROOT_SERVER;
